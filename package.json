@@ -1,0 +1,32 @@
+{
+  "name": "qa_automation_certification",
+  "version": "1.0.0",
+  "description": "This is a repository of QA Automation Certification testing saucedemo page",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testcafeChrome": "testcafe chrome tests/*",
+    "testcafeSafari": "testcafe safari tests/*",
+    "testcafeFirefox": "testcafe firefox tests/*",
+    "testReport": "testcafe chrome tests/* --reporter html:reports/report.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiguelMoraa/QA_automation_certification.git"
+  },
+  "author": "Miguel Angel Hernandez Mora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiguelMoraa/QA_automation_certification/issues"
+  },
+  "homepage": "https://github.com/MiguelMoraa/QA_automation_certification#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "node": "^15.10.0",
+    "testcafe": "^1.12.0",
+    "testcafe-reporter-html": "^1.4.6"
+  }
+}
