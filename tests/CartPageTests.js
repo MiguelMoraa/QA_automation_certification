@@ -19,7 +19,7 @@ roles.VALID_USERS.forEach(role => {
 
 //Expceted: TC06 Validate all the items that have been added to the shopping cart.
 roles.VALID_USERS.forEach(role => {    
-    test.only('Add multiple items to shopping Cart '+role.USER, async t =>{
+    test('Add multiple items to shopping Cart '+role.USER, async t =>{
         await IndexPage.loginSaucedemo(role.USER, role.PASSWORD)
         await t.expect(InventoryPage.productsLabel.exists).ok()
         await InventoryPage.addMultipleItems()
