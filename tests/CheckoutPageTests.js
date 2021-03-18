@@ -2,7 +2,7 @@ import IndexPage from '../pages/IndexPage'
 import InventoryPage from '../pages/InventoryPage'
 import CartPage from '../pages/CartPage'
 import CheckoutPage from '../pages/CheckoutPage'
-import { chekoutData } from '../data/checkout'
+import { checkoutData } from '../data/checkout'
 import { errorMessages } from '../data/errorMessages'
 
 const roles = require('../data/roles')
@@ -38,9 +38,9 @@ roles.VALID_USERS.forEach(role => {
         await t.expect(CartPage.bikeLightText.exists).ok()
         await CartPage.clickOnCkeckOutButton()
         await t.expect(CheckoutPage.postalCodeField.exists).ok()
-        await CheckoutPage.fillPersonalInfo(chekoutData.VALID_DATA.firstname,
-                                            chekoutData.VALID_DATA.lastname,
-                                            chekoutData.VALID_DATA.postalcode)
+        await CheckoutPage.fillPersonalInfo(checkoutData.VALID_DATA.firstname,
+                                            checkoutData.VALID_DATA.lastname,
+                                            checkoutData.VALID_DATA.postalcode)
         await CheckoutPage.clickContinueButton()
         await t.expect(CheckoutPage.paymentInfoText.exists).ok()
     })
@@ -57,9 +57,9 @@ roles.VALID_USERS.forEach(role => {
         await t.expect(CartPage.bikeLightText.exists).ok()
         await CartPage.clickOnCkeckOutButton()
         await t.expect(CheckoutPage.postalCodeField.exists).ok()
-        await CheckoutPage.fillPersonalInfo(chekoutData.VALID_DATA.firstname,
-                                            chekoutData.VALID_DATA.lastname,
-                                            chekoutData.VALID_DATA.postalcode)
+        await CheckoutPage.fillPersonalInfo(checkoutData.VALID_DATA.firstname,
+                                            checkoutData.VALID_DATA.lastname,
+                                            checkoutData.VALID_DATA.postalcode)
         await CheckoutPage.clickContinueButton()
         await t.expect(CheckoutPage.paymentInfoText.exists).ok()
         await t.expect(CartPage.backPackText.exists).ok()
@@ -78,9 +78,9 @@ roles.VALID_USERS.forEach(role => {
         await t.expect(CartPage.bikeLightText.exists).ok()
         await CartPage.clickOnCkeckOutButton()
         await t.expect(CheckoutPage.postalCodeField.exists).ok()
-        await CheckoutPage.fillPersonalInfo(chekoutData.VALID_DATA.firstname,
-                                            chekoutData.VALID_DATA.lastname,
-                                            chekoutData.VALID_DATA.postalcode)    
+        await CheckoutPage.fillPersonalInfo(checkoutData.VALID_DATA.firstname,
+                                            checkoutData.VALID_DATA.lastname,
+                                            checkoutData.VALID_DATA.postalcode)    
         await CheckoutPage.clickContinueButton()
         await t.expect(CheckoutPage.paymentInfoText.exists).ok()
         await t.expect(CartPage.backPackText.exists).ok()

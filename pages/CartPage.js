@@ -1,4 +1,4 @@
-import { Selector, t, Role } from 'testcafe'
+import { Selector, t } from 'testcafe'
 
 class CartPage {
     constructor(){

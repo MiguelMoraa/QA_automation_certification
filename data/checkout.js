@@ -1,7 +1,7 @@
 import dotenv from 'dotenv'
 dotenv.config()
 
-export const chekoutData = {
+export const checkoutData = {
     VALID_DATA: {
         firstname: process.env.FISTNAME,
         lastname: process.env.LASTNAME,
