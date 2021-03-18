@@ -24,7 +24,6 @@ roles.VALID_USERS.forEach(role => {
         await t.expect(InventoryPage.productsLabel.exists).ok()
         await InventoryPage.addMultipleItems()
         await InventoryPage.clickOnCartButton()
-        await InventoryPage.validateAddedItems()
         await t.expect(CartPage.backPackText.exists).ok()
         await t.expect(CartPage.bikeLightText.exists).ok()
     })
